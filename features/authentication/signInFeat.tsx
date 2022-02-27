@@ -1,23 +1,17 @@
-//* Import useSignInWithEmailAndPassword from react-firebase-hooks
-import firebase from '@/lib/backend/firebase/appConfiguration';
+//* Import app's authentication configurations from appConfiguration.
+import {appAuth} from '@/lib/backend/firebase/appConfiguration';
 
 //* Import SignInFeat UI from react-firebaseui
 import StyledFirebaseAuth from 'react-firebaseui/StyledFirebaseAuth';
 
-//* Import authConfiguration for react-firebaseui
-import {authConfiguration} from './authConfiguration';
+//* Import firebaseUiConfig for react-firebaseui
+import {firebaseUiConfig} from './config/firebaseUiConfig';
 
 export const SignInFeat = (): JSX.Element => {
-	// const [
-	// 	signInWithEmailAndPassword,
-	// 	user,
-	// 	loading,
-	// 	error,
-	// ] = useSignInWithEmailAndPassword(firebase.auth);
 
 	return (
 		<>
-			<StyledFirebaseAuth uiConfig={authConfiguration} firebaseAuth={firebase.auth()} />
+			<StyledFirebaseAuth uiConfig={firebaseUiConfig} firebaseAuth={appAuth} />
 		</>
 	);
 };
