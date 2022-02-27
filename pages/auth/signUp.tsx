@@ -3,7 +3,7 @@ import {NextPage} from 'next';
 
 const SignUp: NextPage = (): JSX.Element => {
 	return (
-		<div >
+		<div className={`w-screen h-screen flex justify-center items-center bg-gray-200`} >
 			<SignUpFeat />
 		</div >
 	);
