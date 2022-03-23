@@ -1,4 +1,4 @@
-const Footer = () => {
+const Footer = (): React.ReactNode => {
   return <div>Footer</div>
 }
 

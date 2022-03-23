@@ -1,10 +1,10 @@
 import { NextPage } from 'next'
-
+import Image from 'next/image'
 export const ProductCard: NextPage = (): JSX.Element => {
   return (
     <div className="product-card">
       <div className="product-card__image">
-        <img src="https://via.placeholder.com/300x300" alt="product" />
+        <Image src="https://via.placeholder.com/300x300" alt="product" />
       </div>
       <div className="product-card__content">
         <h3 className="product-card__title">Product title</h3>
