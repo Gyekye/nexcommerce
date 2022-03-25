@@ -1,14 +1,14 @@
-import Link from "next/link";
-import { HiMenuAlt3 } from "react-icons/hi";
-import { BsBagCheck, BsPerson, BsSuitHeart } from "react-icons/bs";
-import { FiSearch } from "react-icons/fi";
-import { useState } from "react";
+import Link from 'next/link'
+import { HiMenuAlt3 } from 'react-icons/hi'
+import { BsBagCheck, BsPerson, BsSuitHeart } from 'react-icons/bs'
+import { FiSearch } from 'react-icons/fi'
+import { useState } from 'react'
 
 const Navbar = (): JSX.Element => {
-  const [isMenuOpened, setIsMenuOpened] = useState<boolean>(false);
+  const [isMenuOpened, setIsMenuOpened] = useState<boolean>(false)
   const handleMenuButtonClick = (): void => {
-    setIsMenuOpened(!isMenuOpened);
-  };
+    setIsMenuOpened(!isMenuOpened)
+  }
   // CLOSE MENU WHEN USER CLICKS OUTSIDE OF IT
   return (
     <>
@@ -75,10 +75,7 @@ const Navbar = (): JSX.Element => {
           />
         </form>
         {isMenuOpened && (
-          <div
-            className="bg-white shadow-md rounded-sm absolute right-2 top-[3rem] lg:top-full pb-2 lg:hidden z-20 menu"
-
-          >
+          <div className="bg-white shadow-md rounded-sm absolute right-2 top-[3rem] lg:top-full pb-2 lg:hidden z-20 menu">
             <div className="border-b p-3">
               <p className="font-semibold">Welcome</p>
               <p>To access wishlist or cart</p>
@@ -107,7 +104,7 @@ const Navbar = (): JSX.Element => {
         )}
       </nav>
     </>
-  );
-};
+  )
+}
 
-export default Navbar;
+export default Navbar
