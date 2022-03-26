@@ -3,5 +3,16 @@
 @tailwind utilities;
 @tailwind variants;
 body {
-  font-family: 'work sans', 'sans-serif';
+  font-family: "work sans", "sans-serif";
+}
+
+@layer components {
+  @keyframes marque {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translatex(-1000px);
+    }
+  }
 }
