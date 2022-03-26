@@ -6,7 +6,7 @@ import { useState } from "react";
 
 const Navbar = (): JSX.Element => {
   const [isMenuOpened, setIsMenuOpened] = useState<boolean>(false);
-  const handleMenuButtonClick = (): void => {
+  const handleMenuClick = (): void => {
     setIsMenuOpened(!isMenuOpened);
   };
   // CLOSE MENU WHEN USER CLICKS OUTSIDE OF IT
@@ -57,7 +57,7 @@ const Navbar = (): JSX.Element => {
             </button>
             <button
               className="hover:scale-110 duration-200 transition lg:hidden"
-              onClick={handleMenuButtonClick}
+              onClick={handleMenuClick}
             >
               <HiMenuAlt3 size={24} />
             </button>
