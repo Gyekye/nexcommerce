@@ -2,7 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { BsSuitHeart } from "react-icons/bs";
 
-const HomePage = (): JSX.Element => {
+const FeaturedProducts = (): JSX.Element => {
   return (
     <section>
       <div className="flex flex-col lg:flex-row w-full ">
@@ -13,6 +13,7 @@ const HomePage = (): JSX.Element => {
               alt="First Image"
               objectFit="cover"
               layout="fill"
+              className="group-hover:scale-110 transition duration-500 "
             />
             <div className="absolute left-0 top-0.5 space-y-0.5">
               <h3 className="capitalize bg-white p-4 px-5 text-black text-3xl font-bold">
@@ -38,6 +39,7 @@ const HomePage = (): JSX.Element => {
                 alt="First Image"
                 objectFit="cover"
                 layout="fill"
+                className="group-hover:scale-110 transition duration-500 "
               />
               <div className="absolute left-0 top-0.5 space-y-0.5">
                 <h3 className="capitalize bg-white p-4 px-5 text-black text-3xl font-bold">
@@ -62,6 +64,7 @@ const HomePage = (): JSX.Element => {
                 alt="First Image"
                 objectFit="cover"
                 layout="fill"
+                className="group-hover:scale-110 transition duration-500 "
               />
               <div className="absolute left-0 top-0.5 space-y-0.5">
                 <h3 className="capitalize bg-white p-4 px-5 text-black text-3xl font-bold">
@@ -84,4 +87,5 @@ const HomePage = (): JSX.Element => {
     </section>
   );
 };
-export default HomePage;
+
+export default FeaturedProducts;
