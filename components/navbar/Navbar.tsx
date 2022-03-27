@@ -1,18 +1,18 @@
-import Link from 'next/link'
-import { HiMenuAlt3 } from 'react-icons/hi'
-import { BsBagCheck, BsPerson, BsSuitHeart } from 'react-icons/bs'
-import { FiSearch } from 'react-icons/fi'
-import { useState } from 'react'
+import Link from "next/link";
+import { HiMenuAlt3 } from "react-icons/hi";
+import { BsBagCheck, BsPerson, BsSuitHeart } from "react-icons/bs";
+import { FiSearch } from "react-icons/fi";
+import { useState } from "react";
 
 const Navbar = (): JSX.Element => {
-  const [isMenuOpened, setIsMenuOpened] = useState<boolean>(false)
-  const handleMenuButtonClick = (): void => {
-    setIsMenuOpened(!isMenuOpened)
-  }
+  const [isMenuOpened, setIsMenuOpened] = useState<boolean>(false);
+  const handleMenuClick = (): void => {
+    setIsMenuOpened(!isMenuOpened);
+  };
   // CLOSE MENU WHEN USER CLICKS OUTSIDE OF IT
   return (
     <>
-      <nav className="px-5 shadow-sm w-full relative bg-white mb-2">
+      <nav className="px-5 shadow-sm w-full relative bg-white ">
         <div className="flex w-full py-4">
           <div className="flex-1 gap-4 flex items-center">
             <Link href="/">
@@ -57,7 +57,7 @@ const Navbar = (): JSX.Element => {
             </button>
             <button
               className="hover:scale-110 duration-200 transition lg:hidden"
-              onClick={handleMenuButtonClick}
+              onClick={handleMenuClick}
             >
               <HiMenuAlt3 size={24} />
             </button>
@@ -104,7 +104,7 @@ const Navbar = (): JSX.Element => {
         )}
       </nav>
     </>
-  )
-}
+  );
+};
 
-export default Navbar
+export default Navbar;
