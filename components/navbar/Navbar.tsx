@@ -13,7 +13,7 @@ const Navbar = (): JSX.Element => {
   return (
     <>
       <nav className="px-5 shadow-sm w-full relative bg-white ">
-        <div className="flex w-full py-4">
+        <div className="flex w-full h-16 items-center">
           <div className="flex-1 gap-4 flex items-center">
             <Link href="/">
               <a>Logo</a>
